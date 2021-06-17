@@ -1,0 +1,147 @@
+// /start log in section
+.login-box {
+    margin-left: 80px;
+}
+
+.log-in-section {
+    margin: 70px 0;
+    //strat p section
+    .p-section {
+        .log-in-p {
+            font-family: $font-bold;
+            font-size: 26px;
+            color: $min-color;
+        }
+        .hello-p {
+            font-size: 21px;
+            padding-top: 22px;
+            color: $gray-color;
+            font-family: $font-reg;
+        }
+    }
+    //end p section
+    //strat form section
+    .form-g {
+        margin-top: 40px;
+        .button-style {
+            width: 100%;
+        }
+        .input-f {
+            margin-bottom: 19px;
+            width: 80%;
+        }
+        .password-in {
+            .devo-password-input {
+                position: relative;
+                .toggle-password {
+                    position: absolute;
+                    left: 20px;
+                    color: #a5a6a7;
+                    font-size: 25px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+                .password-input::placeholder {
+                    font-size: 70px;
+                }
+            }
+            .forget-div {
+                margin: 19px 0px 33px 40px;
+                .forget-password {
+                    color: $gray-color;
+                    font-size: 17px;
+                    font-family: $font-reg;
+                }
+            }
+        }
+    }
+    .dont-have {
+        font-size: 17px;
+        font-family: $font-bold;
+        margin-top: 30px;
+        color: $gray-color;
+        .new-one {
+            color: $min-color;
+        }
+    }
+    .devo-back {
+        margin-top: 30px;
+        text-align: left;
+        a {
+            font-family: $font-bold;
+            font-size: 17px;
+            color: $gray-color;
+        }
+        @media (max-width: 767px) {
+            margin-top: 7px;
+            text-align: right;
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+    //end p section
+    .img-left {
+        position: relative;
+        img{
+            height: 523px;
+            object-fit: cover;
+        }
+        &::after {
+            content: "";
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            position: absolute;
+            background: rgb(122, 50, 193);
+            background: linear-gradient(90deg, #045ba3 0%, rgba(98, 114, 195, 1) 100%);
+            z-index: 1;
+            opacity: 0.7;
+        }
+    }
+}
+
+//end log in section
+@media (max-width: 992px) {
+    .img-left {
+        margin: 10px 0 ;
+    }
+    .log-in-section {
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .login-box {
+        margin-left: 0;
+    }
+    .log-in-section {
+        margin: 40px 0;
+        .p-section {
+            .log-in-p {
+                font-size: 23px;
+            }
+            .hello-p {
+                font-size: 18px;
+            }
+        }
+        .form-g {
+            margin-top: 30px;
+            .password-in {
+                .forget-div {
+                    margin: 10px 0px 24px 40px;
+                    .forget-password {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        .dont-have {
+            margin-top: 22px;
+            font-size: 15px;
+        }
+    }
+}
+
+//end login page

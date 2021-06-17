@@ -1,0 +1,288 @@
+// start register-form-box
+
+.register-form-box {
+    padding: 0 0 33px;
+    .register-form {
+        .buttom-link2 {
+            margin: 30px 0 0;
+            .link-a {
+                background-color: rgba($min-color, 1);
+                border: 0;
+                padding: 12px 60px;
+                cursor: pointer;
+                box-shadow: 1px 2px 4px rgba($min-color, 0.3);
+                color: rgba($white-color, 1);
+                @extend%trans-4;
+                &:hover {
+                    background-color: rgba($blue-color, 1);
+                    transform: translate(2px, 2px) scale(0.99);
+                }
+            }
+        }
+        .form-box {
+            margin: 30px 0 0;
+            border-top: 1px solid rgba($blue-color, 1);
+            padding: 40px;
+            background-color: rgba($blue-color, 0.2);
+            .devo-form-box-title {
+                margin: 0 0 40px;
+                display: flex;
+                align-items: center;
+                .title1 {
+                    margin: 0 0 0 20px;
+                }
+            }
+
+            .form-group {
+                margin: 0 0 28px;
+                &.long-one {
+                    .select-box {
+                        width: 100%;
+                    }
+                }
+                .select-box {
+                    width: 456px;
+                    max-width: 100%;
+                    height: 42px;
+                }
+
+                &.drop-file-box {
+                    display: flex;
+                    align-items: center;
+                    .form-label-basic {
+                        flex: 0.4;
+                    }
+                    .dropify-wrapper {
+                        margin: 0 30px 0 0;
+                        width: 383px !important;
+                        max-width: 100%;
+                        border: 2px dashed #e5e5e5;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// end register-form-box
+
+@media (max-width: 1200px) {
+    .register-form-box {
+        .register-form {
+            .form-box {
+                .form-group {
+                    &.drop-file-box {
+                        .form-label-basic {
+                            flex: 0.5;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media (max-width: 992px) {
+    .devo-form-box-title{
+        display: block  !important;
+        .attention{
+            margin: 10px 0 !important;
+        }
+    }
+    .title1 {
+        font-size: 16px;
+        font-weight: 500;
+    }
+    .attention {
+        font-size: 12px;
+        padding: 10px 24px;
+    }
+    .form-group {
+        .form-input-basic {
+            width: 100%;
+        }
+    }
+    .register-form-box {
+        .register-form {
+            .form-box {
+                .form-group {
+                    .form-label-basic {
+                        font-size: 14px !important;
+                    }
+                    &.drop-file-box {
+                        .form-label-basic {
+                            flex: 1;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+.form-group {
+    .textarea-input {
+        width: 100%;
+        height: 115px;
+        border: 1px solid rgba($blue-color, 1);
+        color: rgba($min-color2, 1);
+        padding: 20px;
+        border-radius: 6px;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid rgba($min-color, 1);
+        }
+    }
+
+    .form-label-basic {
+        font-size: 16px !important;
+        color: rgba($blue-color, 1);
+        display: block;
+        font-weight: 500;
+        margin: 0 0 10px;
+
+        height: 42px;
+    }
+
+    .form-input-basic {
+        width: 456px;
+        max-width: 100%;
+        height: 42px;
+        @extend%trans-4;
+        border: 1px solid rgba($blue-color, 1);
+        color: rgba($blue-color, 1);
+        padding: 0 20px 0;
+        background-color: $white-color ; 
+        text-align: right;
+        position: relative;
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border: 1px solid rgba($min-color, 1);
+        }
+        &::-webkit-inner-spin-button {
+            display: none;
+        }
+
+        &::-webkit-calendar-picker-indicator,
+        &::-webkit-outer-spin-button {
+            -webkit-appearance: none !important;
+            opacity: 1;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-image: url("../img/calendar-alt.png");
+            z-index: 1111;
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    .checkbox-box2 {
+        display: flex;
+        flex-direction: column;
+        .pretty {
+            margin: 17px 0;
+            label {
+                position: relative;
+                padding: 0 24px;
+                display: inline-block;
+                text-indent: unset;
+                min-width: unset;
+                height: unset;
+                &::after,
+                &::before {
+                    right: 0;
+                    border-radius: 50%;
+                    @extend%trans-4;
+                }
+                &::before {
+                    background-color: $white-color ; 
+                }
+            }
+        }
+    }
+    .checkbox-box {
+        .pretty {
+        
+
+            &:first-of-type {
+                margin-right: 0 !important ;
+            }
+            border: 1px solid rgba($sub-color, 1);
+            padding: 10px 15px 10px 26px;
+            border-radius: 6px;
+            @extend%trans-4;
+
+
+
+            &.checkbox-checked {
+                border-color: rgba($min-color, 1);
+                color: rgba($min-color, 1);
+                .state {
+                    label {
+                        &::after {
+                            background-color: rgba($min-color, 1) !important;
+                        }
+                        &::before {
+                            border-color: rgba($min-color, 1);
+                            background-color: $white-color  !important;
+                        }
+                    }
+                }
+            }
+
+
+
+            .state {
+                label {
+                    position: relative;
+                    padding: 0 24px;
+                    display: inline-block;
+                    text-indent: unset;
+                    min-width: unset;
+                    &::after,
+                    &::before {
+                        right: 0;
+                        border-radius: 50%;
+                        @extend%trans-4;
+                    }
+                    &::before {
+                        border-width: 2px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+.attention {
+    font-size: 14px;
+    color: $white-color;
+    padding: 13px 30px;
+    width: 100%;
+    border-radius: 3px;
+    background-color: rgba($min-color, 1);
+    border: 1px solid rgba($min-color2, 1);
+    font-weight: 500;
+}
+
+.nice-select {
+    width: 100%;
+}
+
+ .border-6{
+     border-radius: 6px;
+ }

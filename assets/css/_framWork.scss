@@ -1,0 +1,494 @@
+
+//start framework
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul {
+    margin: unset;
+}
+
+a {
+    &:hover {
+        text-decoration: none;
+    }
+}
+
+.transition3 {
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+}
+
+.parag {
+    font-size: 17px;
+    line-height: 30px;
+    font-family: $font-reg;
+    color: $gray-color;
+}
+
+.heading {
+    font-size: 30px;
+    line-height: 50px;
+    font-family: $font-bold;
+    color: $min-color;
+}
+
+@media (max-width: 992px) {
+    .heading {
+        font-size: 27px;
+        line-height: 41px;
+    }
+    .devo-none {
+        display: none !important;
+    }
+    .devo-order-1 {
+        order: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .heading {
+        font-size: 22px;
+        line-height: 35px;
+    }
+    .parag {
+        font-size: 15px;
+        line-height: 25px;
+    }
+}
+
+.devo-wrap {
+    .wrap-name {
+        font-size: 16px;
+        font-family: Questv1-Regular;
+        line-height: 25px;
+        padding: 11px 57px;
+        border-radius: 4px;
+        @extend .transition3;
+        &:hover {
+            background-color: $gray-color !important;
+        }
+    }
+}
+
+.devo-wrap.sec-wrap {
+    .wrap-name {
+        color: $white-color;
+        background-color: $min-color;
+    }
+}
+
+@media (max-width: 992px) {
+    .circle-arrow {
+        bottom: -25px;
+    }
+    .circle-arrow.devo-left {
+        left: 45% !important;
+        transform: translateX(-45%) !important;
+    }
+    .circle-arrow.devo-right {
+        left: 55% !important;
+        transform: translateX(-55%) !important;
+    }
+}
+
+.overlay-link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+
+.open-menu {
+    right: 0 !important;
+}
+
+.devo-hidden {
+    overflow-y: hidden;
+}
+
+.devo-box-img {
+    img {
+        max-height: 550px;
+        width: auto;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+    .devo-box-img {
+        margin: auto;
+        img {
+            max-height: 450px;
+        }
+    }
+}
+
+.devo-breadcrumbs {
+    .list-item {
+        position: relative;
+        margin-left: 15px;
+        a {
+            font-size: 18px;
+            line-height: 9px;
+            color: $min-color2;
+        }
+        &::after {
+            position: absolute;
+            content: " /";
+            top: 0;
+            left: -11px;
+            color: $min-color2;
+        }
+        &:last-of-type {
+            margin-left: 0;
+            a {
+                color: $white-color;
+            }
+            &::after {
+                display: none;
+            }
+        }
+    }
+}
+
+.devo-breadcrumbs.devo-details {
+    .list-item {
+        a {
+            color: $min-color2;
+        }
+        &:last-of-type {
+            margin-left: 0;
+            a {
+                color: $min-color;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .devo-breadcrumbs {
+        .list-item {
+            a {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+//end framework
+
+
+
+
+
+
+.devo-opcity {
+    opacity: 1 !important;
+    z-index: 999 !important;
+}
+
+.devo-w {
+    width: 100% !important;
+}
+
+
+
+
+
+//english words
+.english-word {
+    font-family: $english-font !important;
+}
+
+//english words
+// color of media
+.face-book {
+    background-color: #5d82d1 !important;
+}
+
+.twitter {
+    background-color: #3897f0 !important;
+}
+
+.google {
+    background-color: #eb5e4c !important;
+}
+
+.whatsapp {
+    background-color: #25d366 !important;
+}
+
+//formal input
+.select-option {
+    margin-bottom: 23.5px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid $gray-color;
+    height: 52px;
+}
+
+.formal {
+    padding-left: 53px;
+    height: 36px;
+    font-size: 16px;
+    width: 100%;
+    color: #00274d;
+    border-radius: 4px;
+    &:focus {
+        outline: none;
+        color: unset;
+        background-color: unset;
+        border-color: $min-color;
+        outline: 0;
+        box-shadow: unset;
+    }
+}
+
+// stander bottom
+.button-style {
+    border-radius: 4px;
+    background-color: $min-color;
+    font-size: 16px;
+    font-family: $font-bold;
+    border: none;
+    border-radius: 4px;
+    padding: 14px 175px;
+    &:focus {
+        outline: none;
+        border-color: unset;
+        box-shadow: unset !important;
+    }
+    @extend .transition3;
+    &:hover {
+        background-color: $gray-color;
+    }
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.label-p {
+    font-family: $font-reg;
+    font-size: 17px;
+    color: $gray-color;
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.nice-select.open {
+    .list {
+        width: 100%;
+    }
+    border-color: $min-color;
+}
+
+.nice-select {
+    &:active,
+    &:focus {
+        border-color: $min-color;
+    }
+}
+
+.nice-select {
+    text-align: right !important;
+    &::after {
+        left: 12px;
+        right: unset;
+    }
+    .option {
+        text-align: right;
+    }
+}
+
+@media (max-width: 767px) {
+    .form-group {
+        margin-bottom: 15px;
+    }
+    .formal {
+        height: 36px;
+    }
+    .button-style {
+        padding: 10px 90px;
+    }
+    .label-p {
+        font-size: 15px;
+        padding-bottom: 10px;
+    }
+    .select-option {
+        height: 45px;
+    }
+}
+
+//start logo
+.logo {
+    margin-top: 31px;
+}
+
+//end logo
+
+// start coursedetails page
+.coursedetails-content {
+    padding-top: 60px;
+    box-shadow: inset 0px 25px 20px -15px rgba(0, 0, 0, 0.05);
+    //                  start head course details
+}
+
+.course-devo {
+    padding-top: 60px;
+    .big-pic-wrapper {
+        width: 200px;
+        display: block;
+        margin: 0 auto;
+        height: 200px;
+        max-height: 100%;
+    }
+    .slick-slide {
+        float: left !important;
+    }
+    .slider-nav {
+        .slick-slide {
+            border: 1px solid $min-color2;
+            margin-left: 20px;
+            border-radius: 4px;
+        }
+        .slick-slider:last-child {
+            margin-left: 0;
+        }
+        .slick-current {
+            border: 1px solid $min-color;
+        }
+    }
+    .circle-arrow {
+        bottom: -69px;
+    }
+    .circle-arrow.devo-left {
+        left: 44%;
+        transform: translateX(-44%);
+    }
+    .circle-arrow.devo-right {
+        left: 56%;
+        transform: translateX(-56%);
+    }
+    .name-course {
+        color: $min-color;
+        font-size: 26px;
+    }
+    .price-course {
+        color: $min-color;
+        font-size: 26px;
+        text-align: left;
+    }
+    .date-course {
+        font-size: 15px;
+        direction: ltr;
+        color: $gray-color;
+        padding-top: 10px;
+        font-family: $font-reg;
+    }
+    .details-course {
+        font-size: 15px;
+        color: $gray-color;
+        padding-top: 20px;
+        font-family: $font-reg;
+    }
+    .devo-course-info {
+        margin-top: 35px;
+        .devo-under-detaills {
+            display: flex;
+            .devo-img-info {
+                border-radius: 4px;
+                background-color: $min-color;
+                padding: 10px 16px;
+                height: fit-content;
+                img {
+                    max-height: 20px;
+                    width: auto;
+                }
+            }
+            .devo-name-details {
+                margin-right: 10px;
+                margin-top: 8px;
+                .devo-title-info {
+                    font-family: $font-bold;
+                    color: $min-color;
+                    font-size: 17px;
+                    margin-top: 5px;
+                }
+                .devo-title-name {
+                    margin-top: 12px;
+                    color: $gray-color;
+                    font-size: 15px;
+                    span {
+                        font-family: $font-reg;
+                    }
+                }
+            }
+        }
+    }
+    .share {
+        margin-top: 40px;
+        .p-share {
+            font-size: 17px;
+            color: $min-color;
+            font-family: $font-bold;
+        }
+    }
+    .social-media {
+        margin-top: 17px;
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                margin-left: 10px;
+                padding: 13px 0 10px;
+                a {
+                    border-radius: 4px;
+                    padding: 13px 15px 10px;
+                    i {
+                        color: $white-color;
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+    }
+    .report-call {
+        margin-top: 25px;
+        font-size: 17px;
+        color: $gray-color;
+        font-family: $font-bold;
+        a {
+            color: $min-color;
+        }
+    }
+    .devo-wrap {
+        margin-top: 50px;
+        .wrap-name {
+            padding: 18px 57px;
+        }
+    }
+}
+
+
+.overlay-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 888;
+    display: none;
+}

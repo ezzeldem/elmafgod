@@ -1,0 +1,30 @@
+%trans-4{
+  transition: .4s all ease-in-out;
+}
+
+
+%flex_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+%back_img {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+%banner_after {
+  position: relative;
+  z-index: 1;
+  &:after{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      background-color: rgba($black-color,  .7);
+      content: "";
+  }
+}

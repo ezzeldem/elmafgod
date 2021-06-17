@@ -1,0 +1,31 @@
+//start sec-intro
+.sec-intro {
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-position: center;
+  z-index: 1;
+  padding: 80px 0px;
+  .text-box {
+      text-align: center;
+      .intro-heading {
+          color: $white-color;
+          font-size: 30px;
+          line-height: 25px;
+          margin-bottom: 20px;
+      }
+  }
+  &::after {
+      content: " ";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: $blue-colorDarck;
+      opacity: 0.78;
+      z-index: -1;
+  }
+}
+
+//end sec-intro

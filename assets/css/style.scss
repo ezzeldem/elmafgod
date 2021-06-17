@@ -1,0 +1,545 @@
+@import "varFile", "framWork" , "navSection",  "loginpage", "bannerSection" , "footerSection", "register-section", "articledetails", "userAdd", "profile-content", "missingCard","addReport" ,"rols-section";
+
+
+
+//start devo-search
+
+
+
+
+
+//start devo-hint
+.devo-hint {
+    margin-top: -50px;
+    .hint-header {
+        margin-bottom: 20px;
+    }
+}
+
+//end devo-hint
+//start main-block
+.main-block {
+    padding-top: 60px;
+    .box-text {
+        .box-icon {
+            background-color: $min-color;
+            border-radius: 6px;
+            box-shadow: 0px 9px 20px 5px $min-color;
+            display: inline-block;
+            padding: 11px 14px 11px 18px;
+            img {
+                max-width: 23px;
+            }
+        }
+        .block-heading {
+            margin: 20px 0;
+            font-size: 26px;
+            line-height: 40px;
+        }
+        .devo-wrap {
+            margin-top: 30px;
+            p.wrap-name {
+                color: $min-color;
+                background-color: $min-color;
+                padding: 11px 36px 11px 81px;
+                position: relative;
+                display: inline-block;
+                cursor: pointer;
+                &::after {
+                    position: absolute;
+                    left: 43px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    content: "\f30a";
+                    font-family: "Font Awesome\ 5 Free";
+                    font-weight: 900;
+                    font-size: 20px;
+                    @extend .transition3;
+                }
+                &:hover {
+                    color: $white-color;
+                    &::after {
+                        transform: rotate(270deg);
+                        top: 24%;
+                        color: $white-color;
+                    }
+                }
+            }
+        }
+        .block-list {
+            padding-right: 33px;
+            color: #414e59;
+            margin-bottom: 15px;
+            position: relative;
+            font-size: 19px;
+            &::after {
+                position: absolute;
+                right: 0;
+                top: 0;
+                content: "\f058";
+                font-family: "Font Awesome 5 Free";
+                color: $min-color;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+//end main-block
+
+//start sec-block
+.sec-block {
+    padding-top: 60px;
+    position: relative;
+    .box-text {
+        .block-p {
+            margin: 20px 0;
+        }
+    }
+    &::after {
+        position: absolute;
+        content: " ";
+        background-image: url(../img/after-intro.png);
+        width: 550px;
+        height: 550px;
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 130px;
+        left: 0;
+        z-index: -1;
+        @media (min-width: 1600px) {
+            width: 700px;
+            height: 700px;
+            top: 40px;
+        }
+    }
+}
+
+//end sec-block
+
+
+//start hint
+@media (max-width: 992px) {
+    .devo-hint {
+        margin-top: 0;
+        .hint-header {
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .devo-hint {
+        text-align: center;
+        padding-top: 35px;
+    }
+}
+
+//end hint
+//start main-block
+@media (max-width: 992px) {
+    .main-block {
+        padding-top: 50px;
+        .box-text {
+            .block-heading {
+                margin-bottom: 15px;
+                font-size: 23px;
+                line-height: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .main-block {
+        text-align: center;
+        .box-text {
+            .box-icon {
+                display: none;
+            }
+            .block-heading {
+                margin-top: 0;
+                font-size: 20px;
+            }
+            .devo-wrap {
+                margin: 20px 0 10px;
+            }
+            .block-list {
+                padding-right: 18px;
+                font-size: 16px;
+                margin-bottom: 12px;
+            }
+        }
+        .devo-box-img {
+            display: none;
+        }
+    }
+}
+
+//end main-block
+
+//start sec-block
+@media (max-width: 992px) {
+    .sec-block {
+        padding-top: 50px;
+        .box-text {
+            .block-p {
+                margin: 15px 0 20px;
+            }
+            .devo-wrap {
+                margin-bottom: 10px;
+            }
+        }
+        .devo-box-img {
+            margin: 25px 0;
+        }
+        &::after {
+            top: 240px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .sec-block {
+        .box-text {
+            text-align: center;
+        }
+        .devo-box-img {
+            display: none;
+        }
+        &::after {
+            display: none;
+        }
+    }
+}
+
+//end sec-block
+
+//start about us page
+
+//start about-box
+.about-box {
+    padding-top: 60px;
+    .box-text {
+        position: relative;
+        .about-box-heading {
+            margin-bottom: 25px;
+        }
+        .about-box-p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+        &::after {
+            position: absolute;
+            content: "01";
+            font-size: 100px;
+            font-family: Questv1-bold;
+            top: -54px;
+            right: 81px;
+            color: $min-color;
+            opacity: 0.3;
+            z-index: -1;
+        }
+    }
+    .box-text.sec {
+        &::after {
+            content: "02";
+        }
+    }
+}
+
+//end about-box
+//end about us page
+//start media
+@media (max-width: 992px) {
+    .about-box {
+        .box-text {
+            .about-box-heading {
+                margin-bottom: 20px;
+            }
+            .about-box-p {
+                margin-bottom: 15px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .sec-intro {
+        padding: 40px 0px;
+        .text-box {
+            .intro-heading {
+                font-size: 25px;
+                line-height: 15px;
+                margin-bottom: 14px;
+            }
+        }
+    }
+    .about-box {
+        padding-top: 40px;
+        text-align: center;
+        .box-text {
+            .about-box-heading {
+                margin-bottom: 20px;
+            }
+            .about-box-p {
+                margin-bottom: 10px;
+            }
+            &::after {
+                display: none;
+            }
+        }
+        .devo-box-img {
+            display: none;
+        }
+    }
+}
+
+
+
+
+//start profile page
+.user-img-box {
+    padding-top: 60px;
+    .user-img {
+        max-height: 220px;
+        width: auto;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 992px) {
+    .user-img-box {
+        padding-top: 50px;
+    }
+}
+
+@media (max-width: 767px) {
+    .user-img-box {
+        padding-top: 40px;
+        .user-img {
+            max-height: 140px;
+        }
+    }
+}
+
+
+
+
+
+
+//start contact page
+.new-account.contact-heading {
+    margin-bottom: 40px;
+}
+
+.type-form {
+    background: $min-color;
+    color: $white-color;
+}
+
+.type-form.nice-select:after {
+    border-color: $white-color;
+}
+
+.type-form.nice-select {
+    .option,
+    .list {
+        background-color: $min-color;
+    }
+}
+
+.type-form.nice-select .option.focus,
+.type-form.nice-select .option.selected.focus,
+.type-form.nice-select .option:hover {
+    background-color: #5f7d9a80;
+}
+
+.dis-form {
+    display: none;
+}
+
+.dis-form.show {
+    display: block !important;
+}
+
+//edit on course details
+.course-devo {
+    .report-call {
+        margin-bottom: 30px;
+    }
+}
+
+.subdetails-box {
+    .box {
+        display: none;
+        .devo-cont {
+            .box-info {
+                margin-left: 40px;
+                &:last-of-type {
+                    margin-left: 0;
+                }
+            }
+        }
+        .box-info {
+            margin-bottom: 10px;
+            .devo-title {
+                font-size: 18px;
+                line-height: 33px;
+                margin-bottom: 8px;
+            }
+            .devo-p {
+                line-height: 25px;
+                font-size: 16px;
+                word-break: break-all;
+            }
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+}
+
+
+//start faq page
+//start faq-content
+.faq-content {
+    padding: 80px 0 50px;
+    .ques-ul {
+        .ques-name {
+            font-size: 19px;
+            line-height: 44px;
+            border-bottom: 1px solid #58585869;
+            padding-bottom: 5px;
+            padding-left: 35px;
+            margin-bottom: 10px;
+            position: relative;
+            cursor: pointer;
+            &::after {
+                font-family: "Font Awesome\ 5 Free";
+                content: "\f067";
+                font-weight: 600;
+                position: absolute;
+                top: 2px;
+                left: 8px;
+            }
+        }
+        .ques-name[aria-expanded="true"] {
+            border-bottom: unset;
+            &::after {
+                content: "\f068";
+            }
+        }
+        .ques-p {
+            font-size: 16px;
+            line-height: 26px;
+            border-bottom: 1px solid #58585869;
+            padding: 0 0 10px;margin: 0 0 10px;
+
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .faq-content {
+        padding: 40px 0 0px;
+        .ques-ul {
+            .ques-name {
+                font-size: 18px;
+                line-height: 39px;
+                padding-left: 25px;
+                &::after {
+                    font-size: 15px;
+                    top: 1px;
+                }
+            }
+            .ques-p {
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+//end faq-content
+//start donne page
+.done-content {
+    padding: 50px 0;
+    text-align: center;
+    .box-done {
+        border: 1px solid $gray-color;
+        padding: 40px;
+        border-radius: 6px;
+        .img-box {
+            margin-bottom: 30px;
+            img {
+                max-height: 200px;
+                width: auto;
+            }
+        }
+        .done-heading {
+            margin-bottom: 20px;
+        }
+        .order-num {
+            span {
+                font-size: 19px;
+                line-height: 40px;
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .done-content {
+        padding: 30px 0 0;
+        .box-done {
+            padding: 25px;
+            .img-box {
+                margin-bottom: 20px;
+                img {
+                    max-height: 140px;
+                }
+            }
+            .order-num {
+                span {
+                    font-size: 16px;
+                    line-height: 30px;
+                }
+            }
+        }
+    }
+}
+
+//end donne page
+
+
+
+
+
+
+
+textarea{
+    height: 180px !important;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.none {
+    display: none;
+}
+
+
+
+
+@import "extent";

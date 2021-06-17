@@ -1,0 +1,23 @@
+.rols-section{
+  padding: 40px 0;
+  .rols-box{
+    ul{
+      list-style: decimal;
+      li{
+        padding: 10px 0;
+        color: $min-color;
+        font-size: 20px;
+        font-weight: 600;
+        ul{
+          list-style: circle;
+          li{
+            font-size: 18px;
+            font-weight: 500;
+            color: $gray-color;
+          }
+        }
+      }
+    }
+  }
+
+}
