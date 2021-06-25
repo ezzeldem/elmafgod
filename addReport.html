@@ -114,7 +114,7 @@
 
                     <div class="register-form-box">
                         <div class="container">
-                            <form action="./done.html" class="register-form">
+                            <form action="./done.html" class="register-form" id="registerForm">
                                 <div class="personal-info form-box border-6">
                                     <div class="row">
                                         <div class="col-md-12">
@@ -129,43 +129,49 @@
                                     <div class="row">
                                         <div class="col-lg-6 col-md-12">
                                             <div class="form-group">
-                                                <label class="form-label-basic" for="name-input">الاسم كاملا</label>
-                                                <input required class="form-input-basic border-6" id="name-input" type="name" placeholder="اكتب اسمك كاملا" />
+                                                <label class="form-label-basic" for="reportName">الاسم كاملا</label>
+                                                <input required class="form-input-basic border-6" id="reportName" type="name" placeholder="اكتب اسمك كاملا" />
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
                                             <div class="form-group">
-                                                <label class="form-label-basic" for="tade-type">تاريخ الميلاد</label>
-                                                <input required class="form-input-basic border-6" id="tade-type" type="date" placeholder="dd/mm/yyy" />
+                                                <label class="form-label-basic" for="reportBirrthDay">تاريخ الميلاد</label>
+                                                <input required class="form-input-basic border-6" id="reportBirrthDay" type="date" placeholder="dd/mm/yyy" />
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
                                             <div class="form-group select-group">
-                                                <label class="form-label-basic" for="cuntry-place">الدولة</label>
-                                                <input required class="form-input-basic border-6" id="cuntry-place" type="text"/>
+                                                <label class="form-label-basic" for="reportCuntry">الدولة</label>
+                                                <input required class="form-input-basic border-6" id="reportCuntry" type="text"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
                                             <div class="form-group select-group">
-                                                <label class="form-label-basic" for="city-place">المدينة</label>
-                                                <input required class="form-input-basic border-6" id="city-place" type="text"/>
+                                                <label class="form-label-basic" for="reportCity">المدينة</label>
+                                                <input required class="form-input-basic border-6" id="reportCity" type="text"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
                                             <div class="form-group">
-                                                <label class="form-label-basic" for="placeLocation">تفاصيل الحادث</label>
-                                                <input required class="form-input-basic border-6" id="placeLocation" type="text"/>
+                                                <label class="form-label-basic" for="reportAge">السن</label>
+                                                <input required class="form-input-basic border-6" id="reportAge" type="text"/>
                                             </div>
                                         </div>
                                         <div class="col-lg-6 col-md-12">
                                             <div class="form-group select-group">
-                                                <label class="form-label-basic" for="select-gender">الجنس</label>
+                                                <label class="form-label-basic" for="reportGender">الجنس</label>
                                                 <div class="select-box">
-                                                    <select required class="selectS" id="select-gender">
+                                                    <select required class="selectS" id="reportGender">
                                                         <option id="EG" value="ذكر">ذكر</option>
                                                         <option id="SA" value="الرياض">انثي</option>
                                                     </select>
                                                 </div>
+                                            </div>
+                                        </div>
+                                        <div class=" col-md-12">
+                                            <div class="form-group">
+                                                <label class="form-label-basic" for="reportDitles">تفاصيل الحادث</label>
+                                                <input required class="form-input-basic border-6 bigone" id="reportDitles" type="text"/>
                                             </div>
                                         </div>
                                     </div>
@@ -187,14 +193,14 @@
                                     <div class="row">
                                         <div class="col-md-12">
                                             <div class="form-group drop-file-box">
-                                                <label class="form-label-basic" for="presonl-photo"> صورة شخصية للمفقود</label>
+                                                <label class="form-label-basic" for="reportImg"> صورة شخصية للمفقود</label>
                                                 <input required type="file" class="dropify" data-height="53" id="presonl-photo" />
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="buttom-link2">
-                                    <button type="submit" class="link-a border-6">تسجيل</button>
+                                    <button type="submit" id="reportSubmit" class="link-a border-6">تسجيل</button>
                                 </div>
                             </form>
                         </div>

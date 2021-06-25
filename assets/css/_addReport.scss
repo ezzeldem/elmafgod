@@ -162,6 +162,9 @@
         background-color: $white-color ; 
         text-align: right;
         position: relative;
+        &.bigone{
+            width: calc(100% - 48px );
+        }
         &:focus {
             outline: none;
             box-shadow: none;

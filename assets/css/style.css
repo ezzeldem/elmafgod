@@ -1903,6 +1903,10 @@ a:hover {
   position: relative;
 }
 
+.form-group .form-input-basic.bigone {
+  width: calc(100% - 48px);
+}
+
 .form-group .form-input-basic:focus {
   outline: none;
   -webkit-box-shadow: none;
@@ -2210,6 +2214,15 @@ a:hover {
   }
   .main-block .devo-box-img {
     display: none;
+  }
+  .intro-section .intro_content {
+    width: 100%;
+  }
+  .intro-section .intro_content .intro_title {
+    font-size: 24px;
+  }
+  .intro-section .intro_content .prag {
+    font-size: 14px;
   }
 }
 
