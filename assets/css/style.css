@@ -2051,6 +2051,12 @@ a:hover {
   color: gray;
 }
 
+.title-font-t {
+  font-weight: 700;
+  padding: 20px 0 10px;
+  color: #045ba3;
+}
+
 .devo-hint {
   margin-top: -50px;
 }
