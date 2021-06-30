@@ -27,9 +27,9 @@ $(document).ready(function () {
             ' <li class="menu-item"> ' +
             '<a href="./about-us.html">من نحن</a>' +
             " </li>" +
-            ' <li class="menu-item">' +
+            '<!-- <li class="menu-item">' +
             ' <a href="./instructions.html">ارشادات</a>' +
-            " </li>" +
+            " </li> -->" +
             " </ul>" +
             ' <div class="main-btns ">' +
             ' <a href="./register.html" class="devo-wrap first-wrap">حساب جديد</a>' +
